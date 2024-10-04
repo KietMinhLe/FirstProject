@@ -1,0 +1,302 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.wrapper {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    background-color: #a8aabb;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.header .logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo img {
+    width: 90px;
+    margin: -13px 5px;
+}
+
+.header h1 {
+    font-size: 2rem;
+}
+
+.header h1 a {
+    color: #fff;
+    text-decoration: none;
+    font-size: xxx-large;
+}
+
+.navbar {
+    margin-bottom: 20px;
+    background-color: #444;
+    height: 100px;
+}
+
+.nav-link {
+    padding: 3.5rem;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+
+.navbar-nav .nav-item .nav-link {
+    color: #fff;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 10px 15px;
+    transition: background-color 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+    background-color: #555;
+}
+
+.navbar-nav .dropdown-menu {
+    background-color: #444;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item {
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: #555;
+}
+
+
+.banner {
+    background: url('../img/banner.png') no-repeat center center/cover;
+    padding: 100px 0;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.banner>* {
+    position: relative;
+    z-index: 1;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.banner .btn {
+    background-color: #ff6347;
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.banner .btn:hover {
+    background-color: #e5533d;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+}
+
+.banner button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.25rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.banner button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    margin-top: 30px;
+}
+
+.content-menu h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.content-menu ul {
+    list-style: none;
+}
+
+.content-menu ul li {
+    margin-bottom: 10px;
+}
+
+.content-menu ul li a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.content-menu ul li a:hover {
+    color: #007bff;
+}
+
+.content-body h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.content-body p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.service-box {
+    margin-bottom: 30px;
+}
+
+.service-box img {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.service-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.service-box p {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    padding-left: 90px;
+    flex-basis: 25%;
+    margin-bottom: 20px;
+    padding-top: 35px;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+    font-size: 1.1rem;
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #fff;
+}
+
+.footer-section a {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-bottom {
+    background-color: #222;
+    color: #ccc;
+    padding: 15px 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.footer-bottom p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.footer-bottom p a:hover {
+    text-decoration: underline;
+}

@@ -1,10 +1,10 @@
 extends ../../layouts/default.pug 
 block main()
-    .content
-
-        .content-menu
+    .container.mt-4
+    .row
+        .col-md-3.content-menu
             h3 Navigation
-            ul
+            ul.list-unstyled
                 li
                     a(href='#home') Home
                 li
@@ -17,48 +17,28 @@ block main()
                     a(href='#blog') Blog
                 li
                     a(href='#contact') Contact
-
-        .content-body
+        .col-md-9.content-body
             h2 Welcome to Our Content Section
             p
                 | We provide a wide range of services that cater to your needs, whether it&apos;s business consulting, web
                 | development, or personal coaching. Explore below for more details!
-
-            .services
-                .service-box
-                    img(src='https://via.placeholder.com/150' alt='Service 1')
+            .row.services
+                .col-md-4.service-box.text-center
+                    img.img-fluid(src='https://via.placeholder.com/150' alt='Service 1')
                     h3 Business Consulting
                     p
                         | We help you grow your business by providing expert advice and strategies tailored to your
                         | needs.
-                .service-box
-                    img(src='https://via.placeholder.com/150' alt='Service 2')
+                .col-md-4.service-box.text-center
+                    img.img-fluid(src='https://via.placeholder.com/150' alt='Service 2')
                     h3 Web Development
                     p
-                        | Our team of web developers can create modern, responsive, and fast websites for any purpose.
-                .service-box
-                    img(src='https://via.placeholder.com/150' alt='Service 3')
+                        | Our team of web developers can create modern, responsive, and fast websites for any
+                        | purpose.
+                .col-md-4.service-box.text-center
+                    img.img-fluid(src='https://via.placeholder.com/150' alt='Service 3')
                     h3 Personal Coaching
                     p
                         | We offer personal coaching sessions to help you unlock your full potential and achieve your
                         | goals.
-            .testimonials
-                h2 What Our Clients Say
-                p
-                    | &quot;Their expertise and attention to detail made all the difference in helping our business grow.&quot; -
-                    | John Doe
-                p
-                    | &quot;I&apos;ve never felt more confident after the personal coaching sessions. Highly recommended!&quot; - Jane
-                    | Smith
-
-            .team
-                h2 Meet Our Team
-                .team-member
-                    img(src='https://via.placeholder.com/100' alt='Team Member 1')
-                    h3 Alice Johnson
-                    p Lead Developer
-                .team-member
-                    img(src='https://via.placeholder.com/100' alt='Team Member 2')
-                    h3 Michael Brown
-                    p Business Strategist
 

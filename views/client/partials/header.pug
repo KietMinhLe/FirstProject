@@ -1,67 +1,57 @@
-.header
+header.header
     .logo
         img(src='/client/img/logo.png' alt='logo shop')
         h1
             span
-                a(href='index.html') VIKTE SHOP
+                a(href="#") VIKTE SHOP
         img(src='/client/img/logo.png' alt='logo shop')
-    nav
-        .nav
-            ul
-                li
-                    a(href='')
-                        i.fa-solid.fa-house
-                        | Home
-                li
-                    a(href='')
-                        i.fa-solid.fa-bag-shopping
-                        | Shop
-                li.dropdown
-                    a(href='#')
-                        i.fa-solid.fa-book-open-reader
-                        | Products
-                    ul.submenu
-                        li
-                            a(href='#') Product 1
-                        li
-                            a(href='#') Product 2
-                        li
-                            a(href='#') Product 3
-                li
-                    a(href='')
-                        i.fa-solid.fa-book-open-reader
-                        | About
-                li
-                    a(href='')
-                        i.fa-solid.fa-user
-                        | Introduce
-                li.dropdown
-                    a(href='#')
-                        i.fa-solid.fa-phone
-                        | Contact
-                    ul.submenu
-                        li
-                            a(href='tel:+123456789')
-                                i.fa-solid.fa-phone
-                                |  +123456789
-                        li
-                            a(href='https://facebook.com' target='_blank')
-                                i.fa-brands.fa-facebook
-                                |                                     Facebook
-                        li
-                            a(href='https://zalo.me' target='_blank')
-                                i.fa-solid.fa-comments
-                                |  Zalo
-        .search
-            input(type='text' name='Tìm Kiếm' placeholder='Search...')
-            a.search-btn(href='#')
-                i.fa-solid.fa-magnifying-glass
-            a.user-btn(href='#')
-                i.fa-solid.fa-user
-            .logout
-                a.out-btn(href='#')
-                    i.fa-solid.fa-arrow-right-from-bracket
-    .banner
-        h1 Welcome to Our Website!
-        p Your journey to success starts here.
-        button.btn Learn More
+
+nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+    a.navbar-brand(href='#') 
+    button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+    #navbarNav.collapse.navbar-collapse
+        ul.navbar-nav
+            li.nav-item.active
+                a.nav-link(href='#')
+                    i.fas.fa-house
+                    | Home
+            li.nav-item
+                a.nav-link(href='#')
+                    i.fas.fa-bag-shopping
+                    | Shop
+            li.nav-item.dropdown
+                a#navbarDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                    i.fas.fa-book-open-reader
+                    | Products
+                .dropdown-menu(aria-labelledby='navbarDropdown')
+                    a.dropdown-item(href='#') Product 1
+                    a.dropdown-item(href='#') Product 2
+                    a.dropdown-item(href='#') Product 3
+            li.nav-item
+                a.nav-link(href='#')
+                    i.fas.fa-book-open-reader
+                    | About
+            li.nav-item
+                a.nav-link(href='#')
+                    i.fas.fa-user
+                    | Introduce
+            li.nav-item.dropdown
+                a#contactDropdown.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                    i.fas.fa-phone
+                    | Contact
+                .dropdown-menu(aria-labelledby='contactDropdown')
+                    a.dropdown-item(href='tel:+123456789')
+                        i.fas.fa-phone
+                        | +123456789
+                    a.dropdown-item(href='https://facebook.com' target='_blank')
+                        i.fab.fa-facebook
+                        | Facebook
+                    a.dropdown-item(href='https://zalo.me' target='_blank')
+                        i.fas.fa-comments
+                        | Zalo
+
+.banner.text-center
+    h1 Welcome to Our Website!
+    p Your journey to success starts here.
+    button.btn.btn-primary Learn More
