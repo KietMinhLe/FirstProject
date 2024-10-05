@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+
 const productSchema = new mongoose.Schema({
   title: String,
   price: Number,
@@ -11,6 +12,6 @@ const productSchema = new mongoose.Schema({
   delete: Boolean,
 });
 
-const Product = mongoose.model("Product", yourSchema, "project");
+const Product = mongoose.model("Product", productSchema, "project");
 
 module.exports = Product;
