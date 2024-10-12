@@ -7,8 +7,6 @@ module.exports.product = async (req, res) => {
     deleted: false,
   });
 
-  console.log(products);
-
   const newProducts = products.map((item) => {
     item.priceNew = (
       (item.price * (100 - item.discountPercentage)) /
@@ -17,6 +15,8 @@ module.exports.product = async (req, res) => {
     return item;
   });
 
+  console.log(newProducts);
+  
   res.render("./client/pages/products/product.client.pug", {
     products: newProducts,
   });

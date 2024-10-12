@@ -1,6 +1,12 @@
 const express = require("express");
 const database = require("./config/database.js");
-const Router = require("./routes/client/index.route");
+
+//Router->Client
+const Router = require("./routes/client/index.route.js");
+
+//Router->admin
+const RouterAdmin = require("./routes/admin/index.route.js");
+
 const app = express();
 
 require("dotenv").config();
@@ -17,6 +23,7 @@ app.use(express.static("public"));
 
 //Router
 Router(app);
+RouterAdmin(app);
 
 //Config
 database.connect();
